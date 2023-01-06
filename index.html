@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Number Game</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="./MediaQuery.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="./icon.png" alt="App-Logo" />
+        <h1>Guess-<span>Number</span></h1>
+      </header>
+      <div class="box">
+        <button id="restartBtn">Restart The Game</button>
+        <p>[ -Guess Between 1 And 20- ]</p>
+      </div>
+
+      <div class="correctNumberBox">
+        <hr />
+        <p id="correctGuess">?</p>
+        <hr />
+      </div>
+
+      <div class="GameContainer">
+        <div class="leftBox">
+          <input type="text" id="inputNumber" placeholder="Enter Your Guess" />
+          <input type="button" value="Check" id="checkGuess" />
+        </div>
+        <div class="rightBox">
+          <p id="Message">Start Guessing🤔🤔...</p>
+          <p>💖Score: <span id="Score">20</span></p>
+          <p>🎖️Highscore: <span id="HighestScore"> 00</span></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
